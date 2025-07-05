@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders Learn React link', () => {
+test('renders learn react link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i); // matches "Learn React" (case-insensitive)
-  expect(linkElement).toBeInTheDocument(); // check if element exists in DOM
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
 });
