@@ -23,7 +23,7 @@ jobs:
               uses: actions/checkout@v2
 
             - name: "Run Test"
-              run: npm test
+              run: npm tests
 
             - name: "Upload product-ready build files"
               uses: actions/upload-artifact@v4
