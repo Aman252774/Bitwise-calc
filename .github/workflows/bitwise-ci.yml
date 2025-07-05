@@ -25,11 +25,17 @@ jobs:
             - name: "Install Dependencies"
               run: npm install
 
+            - name: "List directories"
+              run: ls
+
             - name: "Run Test"
               run: npm test
+
+            - name: "Run Build"
+              run: npm run build
 
             - name: "Upload product-ready build files"
               uses: actions/upload-artifact@v4
               with:
-                name: build
-                path: Components
+                name: dist
+                path: build
